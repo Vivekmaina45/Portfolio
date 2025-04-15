@@ -1,0 +1,473 @@
+/* header{
+  height: 100px;
+  width: 100%;
+  /* background-image: url(back1.jpeg); 
+.blogtopic{
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  font-size: large;
+  font-weight: 400;
+}
+
+.blogs{
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.head{
+  height: 100px;
+  width: 100%;
+  
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position:fixed;
+  
+  
+}
+.half1{
+  height: 100px;
+  width: 50%;
+  justify-items: center;
+  /* display:  inline-block;
+  display: flex;
+  justify-content: space-around; 
+}
+#icon{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  margin-top: 30px;
+}
+
+
+
+/* .darkMode{
+  width: 80px;
+  height: 35px;
+  margin-top: 5%;
+  border: 5px solid black ;
+  
+  
+} 
+
+.box{
+  height: 20px;
+  width: 120px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align:  center;
+}
+
+.half2{
+  height: 100px;
+  width: 50%;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 30px;
+  margin-right: 20px;
+}
+
+.centre{
+  width: 100%;
+  height: 600px;
+  border: 2px solid black;
+  display: inline-block;
+  display: flex;
+
+  
+  
+  
+
+}
+
+.myself{
+  width: 50%;
+  text-align: center;
+  margin-top: 10%;
+  
+
+
+
+}
+.photoo{
+  width: 50%;
+  /* border: 2px solid black; 
+    
+  
+}
+.photoo1{
+  margin-top: 10%;
+  margin-left: 20%;
+  margin-right: 20%;
+
+
+  /* border: 2px solid black; 
+  
+}
+
+.photoo1:hover{
+  transform: scale(1.1);
+  box-shadow: rgb(69, 132, 195);
+}
+
+
+
+.auto{
+  color:  rgb(69, 132, 195);
+  box-shadow: black;
+}
+
+.box:hover{
+  background-color: rgb(69, 132, 195) ;
+
+}
+
+
+
+button:onclick{
+  color: white;
+  background-color: black;
+ 
+} 
+.b1{
+  text-align: center;
+}
+
+.b1:hover{
+  transform: scale(1.1);
+}
+
+.contact{
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+
+}
+input {
+  display: block;
+  width: 50vw;
+  padding: 0 1.25rem;
+}
+input,
+input::placeholder {
+    font: 1.25rem/3 sans-serif;
+}
+
+button{
+  width: 30%;
+  height: 50px;
+  background-color: rgb(69, 132, 195);
+}
+
+
+.end{
+  width: 100%;
+  height: 500px;
+  display: inline-block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border: 2px solid black;
+
+
+}
+.explore{
+  height: 500px;
+ 
+  
+  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+  border: 2px solid black;
+  list-style: none;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .dynamic li{
+  color: red;
+  list-style: none;
+  font-size: 50px;
+
+  font-weight: 500;
+  animation: slide 1.5s steps(10) infinite;
+}
+@
+
+
+.dynamic li span{
+  position: relative;
+}
+
+.dynamic li span::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  border-left: 2px solid red;
+  animation: typing 1.5s steps(10) infinite;
+}
+
+@keyframes typing {
+  100%{
+    left:100%;
+    margin :0 -35px 0 35px;
+  }
+}
+
+
+ 
+
+
+/* =======================
+   GENERAL STYLES
+======================= */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+h1, p {
+  margin: 0;
+  padding: 0;
+}
+
+/* Dark Mode */
+.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.dark-mode .box:hover {
+  background-color: #1e90ff;
+}
+
+.dark-mode button {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* =======================
+   HEADER
+======================= */
+header {
+  height: 100px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background: #fff;
+  z-index: 1000;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.half1 img {
+  height: 60px;
+}
+
+.half2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.box {
+  padding: 8px 16px;
+  border: 2px solid black;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+  text-align: center;
+}
+
+.box:hover {
+  background-color: rgb(69, 132, 195);
+  color: white;
+}
+
+/* Dark Mode Icon */
+#icon {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+/* =======================
+   HERO SECTION
+======================= */
+.centre {
+  display: flex;
+  height: 100vh;
+  padding-top: 100px;
+  align-items: center;
+  justify-content: center;
+}
+
+.myself {
+  flex: 1;
+  text-align: center;
+}
+
+.auto {
+  color: rgb(69, 132, 195);
+  font-weight: bold;
+}
+
+.photoo {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.photoo1 img {
+  width: 60%;
+  border-radius: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.photoo1:hover {
+  transform: scale(1.1);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* =======================
+   BLOG SECTION
+======================= */
+.blogtopic {
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.blogs {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  padding: 2rem;
+  gap: 2rem;
+}
+
+.b1 {
+  width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.b1 img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.b1:hover {
+  transform: scale(1.05);
+}
+
+/* =======================
+   CONTACT SECTION
+======================= */
+.contact {
+  text-align: center;
+  padding: 3rem 1rem;
+  background-color: #f9f9f9;
+}
+
+.contact h1 {
+  margin-bottom: 2rem;
+}
+
+.contact input {
+  width: 50vw;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.contact button {
+  width: 30%;
+  height: 50px;
+  background-color: rgb(69, 132, 195);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.contact button:hover {
+  background-color: rgb(50, 100, 150);
+}
+
+/* =======================
+   FOOTER
+======================= */
+.end {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 3rem 1rem;
+  background-color: #eee;
+}
+
+.explore {
+  min-width: 200px;
+  text-align: center;
+}
+
+.explore h3 {
+  margin-bottom: 1rem;
+}
+
+.explore ul {
+  list-style: none;
+  padding: 0;
+}
+
+.explore ul li {
+  margin: 0.5rem 0;
+}

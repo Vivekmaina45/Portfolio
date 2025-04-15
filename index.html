@@ -1,0 +1,148 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="style.css" />
+  <title>Vivek Portfolio</title>
+</head>
+<body>
+
+  <header>
+    <div class="head">
+      <div class="half1">
+        <img src="viveklogo.png" alt="Logo" />
+      </div>
+      <div class="half2">
+        <div class="box">ABOUT ME</div>
+        <div class="box">RESUME</div>
+        <div class="box">SKILLS</div>
+        <div class="box">CONTACT ME</div>
+      </div>
+      <img src="moon.png" alt="Toggle Dark Mode" id="icon" onclick="toggleDarkMode()" />
+    </div>
+  </header>
+
+  <main>
+    <section class="centre">
+      <div class="myself">
+        <h1>Hello, I am</h1>
+        <h1><span class="auto"></span></h1>
+        <h1>Front-end Developer / UI Designer</h1>
+      </div>
+      <div class="photoo">
+        <div class="photoo1">
+          <img src="vivek1.png" alt="Profile Photo" />
+        </div>
+      </div>
+    </section>
+
+    <section class="blogtopic"><h1>Social Media Info.</h1></section>
+
+    <section class="blogs">
+      <a href="https://github.com/Vivekmaina45"><div class="b1">
+        <img src="github.jpeg" alt="Blog 1"/>
+        <p>Github Performance</p>
+      </div></a>
+      <a href="https://leetcode.com/u/vivekmaina2/"><div class="b1">
+        <img src="leet.jpeg" alt="Blog 2"/>
+        <p>Solving Coding Question</p>
+      </div></a>
+      <a href="https://www.linkedin.com/in/vivek-maina-6b66b926b/"><div class="b1">
+        <img src="link.png" alt="Blog 3"/>
+        <p>Resume </p>
+      </div></a>
+    </section>
+
+    <section class="contact">
+      <h1>Contact Me</h1>
+      <form>
+        <div class="Name"><input type="text" placeholder="Enter Name" required/></div>
+        <div class="email"><input type="email" placeholder="Enter Email" required/></div>
+        <div class="message"><input placeholder="Message" required/></div>
+        <button type="submit">Send</button>
+      </form>
+    </section>
+
+    <footer class="end">
+      <div class="explore">
+        <h3>Explore</h3>
+        <ul>
+          <li>Dashboard</li>
+          <li>Marketplace</li>
+          <li>Hire designers</li>
+        </ul>
+      </div>
+      <div class="explore">
+        <h3>Learn & Get Help</h3>
+        <ul>
+          <li>Support</li>
+          <li>University</li>
+          <li>Courses</li>
+          <li>Blog</li>
+        </ul>
+      </div>
+      <div class="explore">
+        <h3>Company</h3>
+        <ul>
+          <li>About</li>
+          <li>Careers</li>
+          <li>Sitemap</li>
+          <li>Become an Affiliate</li>
+        </ul>
+      </div>
+      <div class="explore">
+        <h3>Social</h3>
+        <p>Follow me on socials</p>
+      </div>
+    </footer>
+  </main>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed(".auto", {
+      strings: ["Designer", "Student", "Programmer", "Vivek"],
+      typeSpeed: 150,
+      backSpeed: 150,
+      loop: true
+    });
+
+    function toggleDarkMode() {
+      document.body.classList.toggle("dark-mode");
+    }
+
+    document.getElementById("contactForm").addEventListener("submit", function (e) {
+      e.preventDefault();
+    
+      // Get values
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const message = document.getElementById("message").value.trim();
+    
+      // Basic validation
+      if (!name || !email || !message) {
+        showMessage("Please fill in all fields!", "red");
+        return;
+      }
+    
+      // Simulate "backend" processing
+      setTimeout(() => {
+        console.log("Submitted Data:", { name, email, message });
+        showMessage("Message sent successfully!", "green");
+    
+        // Clear fields
+        document.getElementById("contactForm").reset();
+      }, 1000);
+    });
+    
+    // Helper function to show message
+    function showMessage(msg, color) {
+      const msgBox = document.getElementById("responseMsg");
+      msgBox.textContent = msg;
+      msgBox.style.color = color;
+      msgBox.style.marginTop = "10px";
+    }
+    
+  </script>
+</body>
+</html>
